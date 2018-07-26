@@ -9,16 +9,19 @@ extents = Vector2( 35.3352, 21.24 )
 
 [node name="Main" type="Node2D"]
 
-position = Vector2( 1.50732, 0 )
+position = Vector2( 181.009, 172.853 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
+walk_speed = 5
+
 [node name="RigidBody2D" type="RigidBody2D" parent="." index="1"]
 
-position = Vector2( 350, 400 )
+position = Vector2( -30.3296, 400 )
+scale = Vector2( 1.71399, 1 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -41,8 +44,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" index="0"]
 
-position = Vector2( -6.06538, 0 )
-scale = Vector2( 1.46657, 1 )
+position = Vector2( -5.30926, -0.108893 )
+scale = Vector2( 1.34355, 0.87514 )
 shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="RigidBody2D" index="1"]
@@ -51,10 +54,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -57.0
-margin_top = -21.0
-margin_right = 46.0
-margin_bottom = 21.0
+margin_left = -53.0
+margin_top = -18.0
+margin_right = 42.0
+margin_bottom = 19.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
