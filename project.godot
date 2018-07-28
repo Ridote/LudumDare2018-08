@@ -21,8 +21,10 @@ window/size/height=960
 [layer_names]
 
 2d_render/layer_1="Character"
-2d_render/layer_2="Enemy"
-2d_render/layer_3="Floor"
+2d_render/layer_2="Enemies"
+2d_render/layer_3="Floors"
+2d_render/layer_19="Foreground"
+2d_render/layer_20="Background"
 2d_physics/Floor=false
 2d_physics/Character=false
 2d_physics/Enemy=false
