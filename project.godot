@@ -18,6 +18,15 @@ config/icon="res://icon.png"
 
 window/size/height=960
 
+[layer_names]
+
+2d_render/layer_1="Character"
+2d_render/layer_2="Enemy"
+2d_render/layer_3="Floor"
+2d_physics/Floor=false
+2d_physics/Character=false
+2d_physics/Enemy=false
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

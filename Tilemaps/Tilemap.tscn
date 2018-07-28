@@ -10,17 +10,18 @@ position = Vector2( 25, 25 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 50, 50 )
-_sections_unfolded = [ "Region", "Transform" ]
+_sections_unfolded = [ "Region" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 4
+collision_mask = 3
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall/StaticBody2D" index="0"]
 
@@ -39,12 +40,13 @@ _sections_unfolded = [ "Region", "Transform" ]
 [node name="StaticBody2D" type="StaticBody2D" parent="Floor" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 4
+collision_mask = 3
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/StaticBody2D" index="0"]
 
@@ -63,12 +65,13 @@ _sections_unfolded = [ "Region", "Transform" ]
 [node name="StaticBody2D" type="StaticBody2D" parent="RampUp" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 4
+collision_mask = 3
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RampUp/StaticBody2D" index="0"]
 
@@ -86,12 +89,13 @@ _sections_unfolded = [ "Region", "Transform" ]
 [node name="StaticBody2D" type="StaticBody2D" parent="RampDown" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 4
+collision_mask = 3
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RampDown/StaticBody2D" index="0"]
 
