@@ -1,31 +1,19 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sounds/horriblesongthatshouldbedestroyed.wav" type="AudioStream" id=3]
 [ext_resource path="res://Maps/Map1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Textures/lightGradient2.png" type="Texture" id=5]
-
-[sub_resource type="OccluderPolygon2D" id=1]
-
-closed = true
-cull_mode = 0
-polygon = PoolVector2Array( -275, -50, 325, -50, 425, 50, -275, 50 )
 
 [node name="Main" type="Node2D" index="0"]
 
-position = Vector2( 51.9143, 114.86 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." index="0"]
-
-color = Color( 0.0703125, 0.0701279, 0.0675659, 1 )
-
-[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
+[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 250.932, 55.8671 )
 walk_speed = 8
@@ -33,7 +21,7 @@ on_air_speed = 6
 jump_force = 300
 on_air_friction = 0.98
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="1"]
 
 stream = ExtResource( 3 )
 volume_db = 0.0
@@ -44,45 +32,6 @@ attenuation = 1.0
 bus = "Master"
 area_mask = 1
 
-[node name="TileMap" parent="." index="3" instance=ExtResource( 4 )]
-
-light_mask = 8
-z_index = 0
-_sections_unfolded = [ "Cell", "Transform", "Visibility", "Z Index" ]
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="." index="4"]
-
-light_mask = 4
-position = Vector2( 378.976, 300 )
-occluder = SubResource( 1 )
-light_mask = 4
-_sections_unfolded = [ "Transform", "Visibility" ]
-
-[node name="Light2D" type="Light2D" parent="." index="5"]
-
-position = Vector2( 595.474, 72.6887 )
-scale = Vector2( 4.26274, 2.77357 )
-enabled = true
-editor_only = false
-texture = ExtResource( 5 )
-offset = Vector2( -50, -50 )
-texture_scale = 5.0
-color = Color( 0.963346, 0.984375, 0.888245, 1 )
-energy = 1.0
-mode = 0
-range_height = 0.0
-range_z_min = -1024
-range_z_max = 1024
-range_layer_min = 0
-range_layer_max = 0
-range_item_cull_mask = 786439
-shadow_enabled = true
-shadow_color = Color( 0.0234375, 0.0234375, 0.0234375, 1 )
-shadow_buffer_size = 2048
-shadow_gradient_length = 0.0
-shadow_filter = 2
-shadow_filter_smooth = 1.0
-shadow_item_cull_mask = 786439
-_sections_unfolded = [ "Range", "Shadow", "Visibility" ]
+[node name="TileMap" parent="." index="2" instance=ExtResource( 4 )]
 
 
