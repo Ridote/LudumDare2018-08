@@ -48,46 +48,46 @@
 [ext_resource path="res://Sprites/Player/Jump/frame_12_delay-0.04s.png" type="Texture" id=46]
 [ext_resource path="res://Sprites/Player/Jump/frame_13_delay-0.04s.png" type="Texture" id=47]
 [ext_resource path="res://Sprites/Player/Jump/frame_14_delay-2s.png" type="Texture" id=48]
-[ext_resource path="res://Sprites/Player/Hurt/frame_00_delay-0.04s.png" type="Texture" id=49]
-[ext_resource path="res://Sprites/Player/Hurt/frame_01_delay-0.04s.png" type="Texture" id=50]
-[ext_resource path="res://Sprites/Player/Hurt/frame_02_delay-0.04s.png" type="Texture" id=51]
-[ext_resource path="res://Sprites/Player/Hurt/frame_03_delay-0.08s.png" type="Texture" id=52]
-[ext_resource path="res://Sprites/Player/Hurt/frame_04_delay-0.08s.png" type="Texture" id=53]
-[ext_resource path="res://Sprites/Player/Hurt/frame_05_delay-0.08s.png" type="Texture" id=54]
-[ext_resource path="res://Sprites/Player/Hurt/frame_06_delay-0.08s.png" type="Texture" id=55]
-[ext_resource path="res://Sprites/Player/Hurt/frame_07_delay-0.08s.png" type="Texture" id=56]
-[ext_resource path="res://Sprites/Player/Hurt/frame_08_delay-0.08s.png" type="Texture" id=57]
-[ext_resource path="res://Sprites/Player/Hurt/frame_09_delay-0.08s.png" type="Texture" id=58]
-[ext_resource path="res://Sprites/Player/Hurt/frame_10_delay-0.08s.png" type="Texture" id=59]
-[ext_resource path="res://Sprites/Player/Hurt/frame_11_delay-0.08s.png" type="Texture" id=60]
-[ext_resource path="res://Sprites/Player/Hurt/frame_12_delay-0.08s.png" type="Texture" id=61]
-[ext_resource path="res://Sprites/Player/Hurt/frame_13_delay-0.08s.png" type="Texture" id=62]
-[ext_resource path="res://Sprites/Player/Hurt/frame_14_delay-0.08s.png" type="Texture" id=63]
-[ext_resource path="res://Sprites/Player/Hurt/frame_15_delay-0.08s.png" type="Texture" id=64]
-[ext_resource path="res://Sprites/Player/Hurt/frame_16_delay-0.08s.png" type="Texture" id=65]
-[ext_resource path="res://Sprites/Player/Hurt/frame_17_delay-0.08s.png" type="Texture" id=66]
-[ext_resource path="res://Sprites/Player/Hurt/frame_18_delay-0.08s.png" type="Texture" id=67]
-[ext_resource path="res://Sprites/Player/Hurt/frame_19_delay-0.08s.png" type="Texture" id=68]
-[ext_resource path="res://Sprites/Player/Hurt/frame_20_delay-0.08s.png" type="Texture" id=69]
-[ext_resource path="res://Sprites/Player/Hurt/frame_21_delay-0.08s.png" type="Texture" id=70]
-[ext_resource path="res://Sprites/Player/Hurt/frame_22_delay-0.08s.png" type="Texture" id=71]
-[ext_resource path="res://Sprites/Player/Running/frame_00_delay-0.04s.png" type="Texture" id=72]
-[ext_resource path="res://Sprites/Player/Running/frame_01_delay-0.04s.png" type="Texture" id=73]
-[ext_resource path="res://Sprites/Player/Running/frame_02_delay-0.04s.png" type="Texture" id=74]
-[ext_resource path="res://Sprites/Player/Running/frame_03_delay-0.04s.png" type="Texture" id=75]
-[ext_resource path="res://Sprites/Player/Running/frame_04_delay-0.04s.png" type="Texture" id=76]
-[ext_resource path="res://Sprites/Player/Running/frame_05_delay-0.04s.png" type="Texture" id=77]
-[ext_resource path="res://Sprites/Player/Running/frame_06_delay-0.04s.png" type="Texture" id=78]
-[ext_resource path="res://Sprites/Player/Running/frame_07_delay-0.04s.png" type="Texture" id=79]
-[ext_resource path="res://Sprites/Player/Running/frame_08_delay-0.04s.png" type="Texture" id=80]
-[ext_resource path="res://Sprites/Player/Running/frame_09_delay-0.04s.png" type="Texture" id=81]
-[ext_resource path="res://Sprites/Player/Running/frame_10_delay-0.04s.png" type="Texture" id=82]
-[ext_resource path="res://Sprites/Player/Running/frame_11_delay-0.04s.png" type="Texture" id=83]
-[ext_resource path="res://Sprites/Player/Running/frame_12_delay-0.04s.png" type="Texture" id=84]
-[ext_resource path="res://Sprites/Player/Running/frame_13_delay-0.04s.png" type="Texture" id=85]
-[ext_resource path="res://Sprites/Player/Running/frame_14_delay-0.04s.png" type="Texture" id=86]
-[ext_resource path="res://Sprites/Player/Running/frame_15_delay-0.04s.png" type="Texture" id=87]
-[ext_resource path="res://Sprites/Player/Running/frame_16_delay-0.04s.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/Player/Running/frame_00_delay-0.04s.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Player/Running/frame_01_delay-0.04s.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Player/Running/frame_02_delay-0.04s.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Player/Running/frame_03_delay-0.04s.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Player/Running/frame_04_delay-0.04s.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Player/Running/frame_05_delay-0.04s.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Player/Running/frame_06_delay-0.04s.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Player/Running/frame_07_delay-0.04s.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Player/Running/frame_08_delay-0.04s.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Player/Running/frame_09_delay-0.04s.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Player/Running/frame_10_delay-0.04s.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/Player/Running/frame_11_delay-0.04s.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/Player/Running/frame_12_delay-0.04s.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/Player/Running/frame_13_delay-0.04s.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/Player/Running/frame_14_delay-0.04s.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/Player/Running/frame_15_delay-0.04s.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/Player/Running/frame_16_delay-0.04s.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/Player/Hurt/frame_00_delay-0.04s.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/Player/Hurt/frame_01_delay-0.04s.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/Player/Hurt/frame_02_delay-0.04s.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/Player/Hurt/frame_03_delay-0.08s.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/Player/Hurt/frame_04_delay-0.08s.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/Player/Hurt/frame_05_delay-0.08s.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/Player/Hurt/frame_06_delay-0.08s.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/Player/Hurt/frame_07_delay-0.08s.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Player/Hurt/frame_08_delay-0.08s.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Player/Hurt/frame_09_delay-0.08s.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Player/Hurt/frame_10_delay-0.08s.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/Player/Hurt/frame_11_delay-0.08s.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/Player/Hurt/frame_12_delay-0.08s.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/Player/Hurt/frame_13_delay-0.08s.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/Player/Hurt/frame_14_delay-0.08s.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/Player/Hurt/frame_15_delay-0.08s.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/Player/Hurt/frame_16_delay-0.08s.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/Player/Hurt/frame_17_delay-0.08s.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/Player/Hurt/frame_18_delay-0.08s.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/Player/Hurt/frame_19_delay-0.08s.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Player/Hurt/frame_20_delay-0.08s.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/Player/Hurt/frame_21_delay-0.08s.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/Player/Hurt/frame_22_delay-0.08s.png" type="Texture" id=88]
 [ext_resource path="res://Textures/lightGradient.png" type="Texture" id=89]
 
 [sub_resource type="GDScript" id=1]
@@ -101,7 +101,7 @@ export (float) var friction #Friction values go between 0 and 1
 export (float) var on_air_friction
 
 ###################### CONSTANTS ######################
-const GRAVITY = 400
+const GRAVITY = 9.8
 
 ###################### INTERNAL VARIABLES ######################
 var velocity = Vector2(0,0)
@@ -114,7 +114,7 @@ func _ready():
 
 func _physics_process(delta):
 	#Applying gravity
-	velocity.y += delta * GRAVITY
+	velocity.y += GRAVITY
 	
 	###################### WALK ######################
 	if Input.is_action_pressed(\"ui_left\"):
@@ -180,14 +180,14 @@ animations = [ {
 "name": "Jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ) ],
-"loop": true,
-"name": "Hurt",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
+"frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
 "loop": true,
 "name": "Running",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
+"loop": true,
+"name": "Hurt",
 "speed": 5.0
 } ]
 

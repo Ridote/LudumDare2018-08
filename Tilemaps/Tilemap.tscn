@@ -26,7 +26,7 @@ closed = true
 cull_mode = 0
 polygon = PoolVector2Array( 25, 25, -25, 25, -25, -25 )
 
-[node name="Tileset" type="Node2D"]
+[node name="Tileset" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Visibility" ]
 __meta__ = {
@@ -39,7 +39,7 @@ position = Vector2( 25, 25 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 50, 50 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Region" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="InternalFloor" index="0"]
 
