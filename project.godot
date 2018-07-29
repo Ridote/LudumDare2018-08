@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Platformer"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://GUI/Menu.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -54,4 +54,5 @@ shoot=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"",
 [rendering]
 
 quality/2d/use_pixel_snap=true
+environment/default_clear_color=Color( 0.11879, 0.123687, 0.175781, 1 )
 environment/default_environment="res://default_env.tres"
