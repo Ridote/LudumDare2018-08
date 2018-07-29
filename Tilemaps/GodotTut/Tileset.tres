@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=6 format=2]
 
-[ext_resource path="res://Tilemaps/tileset.png" type="Texture" id=1]
+[ext_resource path="res://Tilemaps/GodotTut/tileset.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -89,4 +89,5 @@ points = PoolVector2Array( -25, -25, 25, 25, -25, 25 )
 4/occluder_offset = Vector2( 25, 25 )
 4/navigation_offset = Vector2( 25, 25 )
 4/shapes = [  ]
+_sections_unfolded = [ "0", "1", "2", "3", "4" ]
 

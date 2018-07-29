@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileset.png-70ab793008ebada6dab7e817f631ffc9.stex"
+path="res://.import/tileset.png-5bab18c44056b0480846770618f438c3.stex"
 
 [deps]
 
-source_file="res://Tilemaps/tileset.png"
-dest_files=[ "res://.import/tileset.png-70ab793008ebada6dab7e817f631ffc9.stex" ]
+source_file="res://Tilemaps/GodotTut/tileset.png"
+dest_files=[ "res://.import/tileset.png-5bab18c44056b0480846770618f438c3.stex" ]
 
 [params]
 
