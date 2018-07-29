@@ -54,7 +54,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Emission Shape", "Gravity", "Initial Velocity", "Scale", "Trail" ]
 
-[node name="TileMap" type="Node2D" index="0"]
+[node name="TileMap" type="Node2D"]
 
 z_index = -1
 _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
@@ -160,7 +160,7 @@ shadow_gradient_length = 0.0
 shadow_filter = 5
 shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 786439
-_sections_unfolded = [ "Range", "Shadow" ]
+_sections_unfolded = [ "Range", "Shadow", "Transform" ]
 
 [node name="Oclusion layer" type="Node" parent="." index="5"]
 

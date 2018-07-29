@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/horriblesongthatshouldbedestroyed.wav-aab8f454b1203a1c894b12008a16789b.sample"
+
+[deps]
+
+source_file="res://Sounds/Music/horriblesongthatshouldbedestroyed.wav"
+dest_files=[ "res://.import/horriblesongthatshouldbedestroyed.wav-aab8f454b1203a1c894b12008a16789b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
