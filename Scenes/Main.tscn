@@ -16,9 +16,6 @@ __meta__ = {
 [node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 250.932, 55.8671 )
-walk_speed = 8
-on_air_speed = 8
-on_air_friction = 0.95
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="1"]
 
