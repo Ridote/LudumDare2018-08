@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Fonts/MKStencilsansBlack.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://GUI/GUI.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/MKStencilsansBlack.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 40
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="GUI" type="CanvasLayer" index="0"]
@@ -17,6 +18,7 @@ offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
 
 [node name="VerticalSeparator" type="VBoxContainer" parent="." index="0"]
 
@@ -49,10 +51,28 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+size_flags_stretch_ratio = 0.5
 alignment = 0
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="HSeparator" type="HSeparator" parent="VerticalSeparator/TopSeparator" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VerticalSeparator/TopSeparator" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 478.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="HSeparator" type="HSeparator" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -67,7 +87,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="HPLabel" type="Label" parent="VerticalSeparator/TopSeparator" index="1"]
+[node name="HPLabel" type="Label" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -93,7 +113,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Margin", "Size Flags" ]
 
-[node name="HSeparator2" type="HSeparator" parent="VerticalSeparator/TopSeparator" index="2"]
+[node name="HSeparator2" type="HSeparator" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -109,7 +129,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="HPBar" type="ColorRect" parent="VerticalSeparator/TopSeparator" index="3"]
+[node name="HPBar" type="ColorRect" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -117,7 +137,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 70.0
 margin_top = 15.0
-margin_right = 471.0
+margin_right = 148.0
 margin_bottom = 35.0
 rect_min_size = Vector2( 0, 20 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -129,14 +149,34 @@ size_flags_vertical = 4
 color = Color( 0.714844, 0.147995, 0.147995, 1 )
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="HSeparator3" type="HSeparator" parent="VerticalSeparator/TopSeparator" index="4"]
+[node name="HPBarEmpty" type="ColorRect" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 475.0
-margin_right = 478.0
+margin_left = 152.0
+margin_top = 15.0
+margin_right = 230.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 7
+size_flags_vertical = 4
+color = Color( 0.243137, 0.243137, 0.243137, 1 )
+_sections_unfolded = [ "Rect", "Size Flags" ]
+
+[node name="HSeparator3" type="HSeparator" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 234.0
+margin_right = 237.0
 margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -145,14 +185,14 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="MPLabel" type="Label" parent="VerticalSeparator/TopSeparator" index="5"]
+[node name="MPLabel" type="Label" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 482.0
-margin_right = 541.0
+margin_left = 241.0
+margin_right = 300.0
 margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -171,14 +211,14 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Size Flags" ]
 
-[node name="HSeparator4" type="HSeparator" parent="VerticalSeparator/TopSeparator" index="6"]
+[node name="HSeparator4" type="HSeparator" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="7"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 545.0
-margin_right = 548.0
+margin_left = 304.0
+margin_right = 307.0
 margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -187,15 +227,15 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="MPBar" type="ColorRect" parent="VerticalSeparator/TopSeparator" index="7"]
+[node name="MPBar" type="ColorRect" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="8"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 552.0
+margin_left = 311.0
 margin_top = 15.0
-margin_right = 953.0
+margin_right = 389.0
 margin_bottom = 35.0
 rect_min_size = Vector2( 0, 20 )
 rect_pivot_offset = Vector2( 0, 0 )
@@ -207,14 +247,34 @@ size_flags_vertical = 4
 color = Color( 0.127945, 0.375513, 0.761719, 1 )
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="HSeparator5" type="HSeparator" parent="VerticalSeparator/TopSeparator" index="8"]
+[node name="MPBarEmpty" type="ColorRect" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="9"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 957.0
-margin_right = 960.0
+margin_left = 393.0
+margin_top = 15.0
+margin_right = 471.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 7
+size_flags_vertical = 4
+color = Color( 0.243137, 0.243137, 0.243137, 1 )
+_sections_unfolded = [ "Rect", "Size Flags" ]
+
+[node name="HSeparator5" type="HSeparator" parent="VerticalSeparator/TopSeparator/HBoxContainer" index="10"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 475.0
+margin_right = 478.0
 margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -222,5 +282,22 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+
+[node name="Control" type="Control" parent="VerticalSeparator/TopSeparator" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 482.0
+margin_right = 960.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+_sections_unfolded = [ "Size Flags" ]
 
 
