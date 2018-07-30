@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Tilemaps/GodotTut/Tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://Textures/lightGradient2.png" type="Texture" id=2]
+[ext_resource path="res://Sounds/Effects/Voices/emptyRoom.wav" type="AudioStream" id=3]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 
@@ -54,13 +55,10 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Emission Shape", "Gravity", "Initial Velocity", "Scale", "Trail" ]
 
-[node name="TileMap" type="Node2D"]
+[node name="TileMap" type="Node2D" index="0"]
 
 z_index = -1
 _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="0"]
 
@@ -252,5 +250,17 @@ shadow_filter = 5
 shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 786439
 _sections_unfolded = [ "Range", "Shadow" ]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="9"]
+
+position = Vector2( 234.499, 60.1594 )
+stream = ExtResource( 3 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 4.31584e-005
+bus = "Master"
+area_mask = 1
 
 
