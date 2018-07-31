@@ -123,4 +123,6 @@ _sections_unfolded = [ "Rect", "Size Flags" ]
 
 visible = false
 
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
+
 
