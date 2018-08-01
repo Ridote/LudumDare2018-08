@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=2]
+[gd_scene load_steps=98 format=2]
 
 [ext_resource path="res://Sprites/Player/Idle/frame_00_delay-0.04s.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Player/Idle/frame_01_delay-0.04s.png" type="Texture" id=2]
@@ -38,60 +38,59 @@
 [ext_resource path="res://Sprites/Player/Running/frame_14_delay-0.04s.png" type="Texture" id=36]
 [ext_resource path="res://Sprites/Player/Running/frame_15_delay-0.04s.png" type="Texture" id=37]
 [ext_resource path="res://Sprites/Player/Running/frame_16_delay-0.04s.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/Player/Fall/frame_00_delay-0.04s.png" type="Texture" id=39]
-[ext_resource path="res://Sprites/Player/Fall/frame_01_delay-0.04s.png" type="Texture" id=40]
-[ext_resource path="res://Sprites/Player/Fall/frame_02_delay-0.04s.png" type="Texture" id=41]
-[ext_resource path="res://Sprites/Player/Fall/frame_03_delay-0.04s.png" type="Texture" id=42]
-[ext_resource path="res://Sprites/Player/Fall/frame_04_delay-0.04s.png" type="Texture" id=43]
-[ext_resource path="res://Sprites/Player/Fall/frame_05_delay-0.04s.png" type="Texture" id=44]
-[ext_resource path="res://Sprites/Player/Fall/frame_06_delay-0.04s.png" type="Texture" id=45]
-[ext_resource path="res://Sprites/Player/Fall/frame_07_delay-0.04s.png" type="Texture" id=46]
-[ext_resource path="res://Sprites/Player/Fall/frame_08_delay-0.04s.png" type="Texture" id=47]
-[ext_resource path="res://Sprites/Player/Fall/frame_09_delay-0.04s.png" type="Texture" id=48]
-[ext_resource path="res://Sprites/Player/Fall/frame_10_delay-0.04s.png" type="Texture" id=49]
-[ext_resource path="res://Sprites/Player/Fall/frame_11_delay-2s.png" type="Texture" id=50]
-[ext_resource path="res://Sprites/Player/Jump/frame_00_delay-0.04s.png" type="Texture" id=51]
-[ext_resource path="res://Sprites/Player/Jump/frame_01_delay-0.04s.png" type="Texture" id=52]
-[ext_resource path="res://Sprites/Player/Jump/frame_02_delay-0.04s.png" type="Texture" id=53]
-[ext_resource path="res://Sprites/Player/Jump/frame_03_delay-0.04s.png" type="Texture" id=54]
-[ext_resource path="res://Sprites/Player/Jump/frame_04_delay-0.04s.png" type="Texture" id=55]
-[ext_resource path="res://Sprites/Player/Jump/frame_05_delay-0.04s.png" type="Texture" id=56]
-[ext_resource path="res://Sprites/Player/Jump/frame_06_delay-0.04s.png" type="Texture" id=57]
-[ext_resource path="res://Sprites/Player/Jump/frame_07_delay-0.04s.png" type="Texture" id=58]
-[ext_resource path="res://Sprites/Player/Jump/frame_08_delay-0.04s.png" type="Texture" id=59]
-[ext_resource path="res://Sprites/Player/Jump/frame_09_delay-0.04s.png" type="Texture" id=60]
-[ext_resource path="res://Sprites/Player/Jump/frame_10_delay-0.04s.png" type="Texture" id=61]
-[ext_resource path="res://Sprites/Player/Jump/frame_11_delay-0.04s.png" type="Texture" id=62]
-[ext_resource path="res://Sprites/Player/Jump/frame_12_delay-0.04s.png" type="Texture" id=63]
-[ext_resource path="res://Sprites/Player/Jump/frame_13_delay-0.04s.png" type="Texture" id=64]
-[ext_resource path="res://Sprites/Player/Jump/frame_14_delay-2s.png" type="Texture" id=65]
-[ext_resource path="res://Sprites/Player/Hurt/frame_00_delay-0.04s.png" type="Texture" id=66]
-[ext_resource path="res://Sprites/Player/Hurt/frame_01_delay-0.04s.png" type="Texture" id=67]
-[ext_resource path="res://Sprites/Player/Hurt/frame_02_delay-0.04s.png" type="Texture" id=68]
-[ext_resource path="res://Sprites/Player/Hurt/frame_03_delay-0.08s.png" type="Texture" id=69]
-[ext_resource path="res://Sprites/Player/Hurt/frame_04_delay-0.08s.png" type="Texture" id=70]
-[ext_resource path="res://Sprites/Player/Hurt/frame_05_delay-0.08s.png" type="Texture" id=71]
-[ext_resource path="res://Sprites/Player/Hurt/frame_06_delay-0.08s.png" type="Texture" id=72]
-[ext_resource path="res://Sprites/Player/Hurt/frame_07_delay-0.08s.png" type="Texture" id=73]
-[ext_resource path="res://Sprites/Player/Hurt/frame_08_delay-0.08s.png" type="Texture" id=74]
-[ext_resource path="res://Sprites/Player/Hurt/frame_09_delay-0.08s.png" type="Texture" id=75]
-[ext_resource path="res://Sprites/Player/Hurt/frame_10_delay-0.08s.png" type="Texture" id=76]
-[ext_resource path="res://Sprites/Player/Hurt/frame_11_delay-0.08s.png" type="Texture" id=77]
-[ext_resource path="res://Sprites/Player/Hurt/frame_12_delay-0.08s.png" type="Texture" id=78]
-[ext_resource path="res://Sprites/Player/Hurt/frame_13_delay-0.08s.png" type="Texture" id=79]
-[ext_resource path="res://Sprites/Player/Hurt/frame_14_delay-0.08s.png" type="Texture" id=80]
-[ext_resource path="res://Sprites/Player/Hurt/frame_15_delay-0.08s.png" type="Texture" id=81]
-[ext_resource path="res://Sprites/Player/Hurt/frame_16_delay-0.08s.png" type="Texture" id=82]
-[ext_resource path="res://Sprites/Player/Hurt/frame_17_delay-0.08s.png" type="Texture" id=83]
-[ext_resource path="res://Sprites/Player/Hurt/frame_18_delay-0.08s.png" type="Texture" id=84]
-[ext_resource path="res://Sprites/Player/Hurt/frame_19_delay-0.08s.png" type="Texture" id=85]
-[ext_resource path="res://Sprites/Player/Hurt/frame_20_delay-0.08s.png" type="Texture" id=86]
-[ext_resource path="res://Sprites/Player/Hurt/frame_21_delay-0.08s.png" type="Texture" id=87]
-[ext_resource path="res://Sprites/Player/Hurt/frame_22_delay-0.08s.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/Player/Hurt/frame_00_delay-0.04s.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Player/Hurt/frame_01_delay-0.04s.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Player/Hurt/frame_02_delay-0.04s.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Player/Hurt/frame_03_delay-0.08s.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Player/Hurt/frame_04_delay-0.08s.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Player/Hurt/frame_05_delay-0.08s.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Player/Hurt/frame_06_delay-0.08s.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Player/Hurt/frame_07_delay-0.08s.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Player/Hurt/frame_08_delay-0.08s.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Player/Hurt/frame_09_delay-0.08s.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Player/Hurt/frame_10_delay-0.08s.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Player/Hurt/frame_11_delay-0.08s.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Player/Hurt/frame_12_delay-0.08s.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Player/Hurt/frame_13_delay-0.08s.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Player/Hurt/frame_14_delay-0.08s.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Player/Hurt/frame_15_delay-0.08s.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Player/Hurt/frame_16_delay-0.08s.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Player/Hurt/frame_17_delay-0.08s.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Player/Hurt/frame_18_delay-0.08s.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Player/Hurt/frame_19_delay-0.08s.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Player/Hurt/frame_20_delay-0.08s.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/Player/Hurt/frame_21_delay-0.08s.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/Player/Hurt/frame_22_delay-0.08s.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/Player/Jump/frame_00_delay-0.04s.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/Player/Jump/frame_01_delay-0.04s.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/Player/Jump/frame_02_delay-0.04s.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/Player/Jump/frame_03_delay-0.04s.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/Player/Jump/frame_04_delay-0.04s.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/Player/Jump/frame_05_delay-0.04s.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/Player/Jump/frame_06_delay-0.04s.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/Player/Jump/frame_07_delay-0.04s.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/Player/Jump/frame_08_delay-0.04s.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/Player/Jump/frame_09_delay-0.04s.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/Player/Jump/frame_10_delay-0.04s.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/Player/Jump/frame_11_delay-0.04s.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Player/Jump/frame_12_delay-0.04s.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Player/Jump/frame_13_delay-0.04s.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Player/Jump/frame_14_delay-2s.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/Player/Fall/frame_00_delay-0.04s.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/Player/Fall/frame_01_delay-0.04s.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/Player/Fall/frame_02_delay-0.04s.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/Player/Fall/frame_03_delay-0.04s.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/Player/Fall/frame_04_delay-0.04s.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/Player/Fall/frame_05_delay-0.04s.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/Player/Fall/frame_06_delay-0.04s.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/Player/Fall/frame_07_delay-0.04s.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/Player/Fall/frame_08_delay-0.04s.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Player/Fall/frame_09_delay-0.04s.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/Player/Fall/frame_10_delay-0.04s.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/Player/Fall/frame_11_delay-2s.png" type="Texture" id=88]
 [ext_resource path="res://Textures/lightGradient3.png" type="Texture" id=89]
 [ext_resource path="res://Sounds/Effects/reload.wav" type="AudioStream" id=90]
 [ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=91]
-[ext_resource path="res://Textures/laser2.png" type="Texture" id=92]
 
 [sub_resource type="GDScript" id=1]
 
@@ -234,15 +233,11 @@ func update_laser(orientation):
 		else:
 			newSize = maxScopeDistance
 	if newSize != oldScopeSize:
-		$laser_scope/laser_scope_light.scale.x = 1
 		oldScopeSize = newSize
 	if orientation:
-		$laser_scope/laser_scope_light.position.x = -19
-		$laser_scope/laser_scope_light.scale.x = -1
 		$laser_scope.points[0].x = -19
 		$laser_scope.points[1].x = oldScopeSize
 	else:
-		$laser_scope/laser_scope_light.position.x = 19
 		$laser_scope.points[0].x = 19
 		$laser_scope.points[1].x = oldScopeSize
 ##############################################################################################
@@ -286,19 +281,19 @@ animations = [ {
 "name": "Running",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ) ],
 "loop": true,
-"name": "Fall",
+"name": "Hurt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"frames": [ ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
+"frames": [ ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
 "loop": true,
-"name": "Hurt",
+"name": "Fall",
 "speed": 5.0
 } ]
 _sections_unfolded = [ "Resource" ]
@@ -334,7 +329,19 @@ tracks/1/keys = {
 "values": [  ]
 }
 
-[node name="Player" type="KinematicBody2D"]
+[sub_resource type="Shader" id=5]
+
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+"
+
+[sub_resource type="ShaderMaterial" id=6]
+
+render_priority = 0
+shader = SubResource( 5 )
+
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -476,40 +483,14 @@ blend_times = [  ]
 
 [node name="laser_scope" type="Line2D" parent="." index="8"]
 
+material = SubResource( 6 )
 points = PoolVector2Array( 19, 2, 200, 2 )
 width = 1.0
 default_color = Color( 1, 0, 0, 1 )
 texture_mode = 6422625
 sharp_limit = 2.0
 round_precision = 8
-_sections_unfolded = [ "Fill" ]
-
-[node name="laser_scope_light" type="Light2D" parent="laser_scope" index="0"]
-
-position = Vector2( 19, 2.04791 )
-scale = Vector2( 1, 0.078524 )
-enabled = true
-editor_only = false
-texture = ExtResource( 92 )
-offset = Vector2( 0, 0 )
-texture_scale = 1.0
-color = Color( 1, 0, 0, 1 )
-energy = 1.0
-mode = 0
-range_height = 0.0
-range_z_min = -1024
-range_z_max = 1024
-range_layer_min = 0
-range_layer_max = 0
-range_item_cull_mask = 524294
-shadow_enabled = false
-shadow_color = Color( 0, 0, 0, 0 )
-shadow_buffer_size = 2048
-shadow_gradient_length = 0.0
-shadow_filter = 0
-shadow_filter_smooth = 0.0
-shadow_item_cull_mask = 1
-_sections_unfolded = [ "Range", "Transform" ]
+_sections_unfolded = [ "Fill", "Material" ]
 
 [connection signal="timeout" from="Timers/ReloadMagazine" to="." method="_on_ReloadMagazine_timeout"]
 
