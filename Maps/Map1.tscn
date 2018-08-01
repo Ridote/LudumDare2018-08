@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Tilemaps/GodotTut/Tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://Textures/lightGradient2.png" type="Texture" id=2]
-[ext_resource path="res://Sounds/Effects/Voices/emptyRoom.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/Effects/Voices/glados-cake-hang-on.wav" type="AudioStream" id=3]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 

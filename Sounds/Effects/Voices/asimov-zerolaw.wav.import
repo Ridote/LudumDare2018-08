@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/asimov-zerolaw.wav-241d7e10852255207ae7799c74a19568.sample"
+
+[deps]
+
+source_file="res://Sounds/Effects/Voices/asimov-zerolaw.wav"
+dest_files=[ "res://.import/asimov-zerolaw.wav-241d7e10852255207ae7799c74a19568.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
