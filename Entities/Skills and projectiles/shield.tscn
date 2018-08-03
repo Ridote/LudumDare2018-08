@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/Skills and projectiles/shield.shader" type="Shader" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = ExtResource( 1 )
+shader_param/color = Color( 0.269531, 0.965759, 1, 1 )
+shader_param/shield_width = 0.01
+shader_param/shield_radius = 0.35
+shader_param/shield_vibrating = 60.0
+_sections_unfolded = [ "shader_param" ]
+
+[node name="Sprite" type="Sprite"]
+
+material = SubResource( 2 )
+position = Vector2( -9.42222, -18.7614 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform" ]
+
+
