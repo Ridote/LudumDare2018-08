@@ -170,6 +170,7 @@ func player_move(delta):
 	# Create forces
 	var force = Vector2(0, GRAVITY)
 	if walk_left:
+		$Shield.material.set_shader_param(\"shield_vibrating\", 30.0);
 		if run:
 			if velocity.x <= RUN_MIN_SPEED and velocity.x > -RUN_MAX_SPEED:
 				force.x -= WALK_FORCE
@@ -178,6 +179,7 @@ func player_move(delta):
 			force.x -= WALK_FORCE
 			stop = false
 	elif walk_right:
+		$Shield.material.set_shader_param(\"shield_vibrating\", 30.0);
 		if run:
 			if velocity.x >= -RUN_MIN_SPEED and velocity.x < RUN_MAX_SPEED:
 				force.x += WALK_FORCE
@@ -189,6 +191,7 @@ func player_move(delta):
 	if stop:
 		var vsign = sign(velocity.x)
 		var vlen = abs(velocity.x)
+		$Shield.material.set_shader_param(\"shield_vibrating\", 10.0);
 		
 		vlen -= STOP_FORCE * delta
 		if vlen < 0:
