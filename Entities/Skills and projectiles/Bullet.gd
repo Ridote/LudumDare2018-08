@@ -3,13 +3,17 @@ extends KinematicBody2D
 var velocity = Vector2(-900,0)
 
 func fire_right():
-	$Fire.process_material.set_shader_param("right", true);
-	$Fire.process_material.set_shader_param("speed", abs(velocity.x));
+	material = $Fire.process_material.duplicate();
+	material.set_shader_param("right", true);
+	material.set_shader_param("speed", abs(velocity.x));
+	$Fire.process_material = material;
 	$Fire.emitting = true;
 
 func fire_left():
-	$Fire.process_material.set_shader_param("right", false);
-	$Fire.process_material.set_shader_param("speed", abs(velocity.x));
+	material = $Fire.process_material.duplicate();
+	material.set_shader_param("right", false);
+	material.set_shader_param("speed", abs(velocity.x));
+	$Fire.process_material = material;
 	$Fire.emitting = true;
 
 func _physics_process(delta):
