@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/Skills and projectiles/Bullet.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Skills and projectiles/bullet.png" type="Texture" id=2]
@@ -9,53 +9,48 @@
 custom_solver_bias = 0.0
 extents = Vector2( 2.52541, 1.52911 )
 
-[sub_resource type="ParticlesMaterial" id=2]
+[sub_resource type="Shader" id=2]
+
+code = "shader_type particles;
+
+uniform float speed = 50.0;
+uniform float spread = 50.0;
+
+void vertex(){
+	COLOR = vec4(1.0);
+	
+	float rand = fract(sin(TIME)*10000.0);
+	rand *= sin(TIME * float(NUMBER));
+	
+	if(CUSTOM.g == 0.0){
+		CUSTOM = vec4(CUSTOM.r + DELTA, rand, 0.0,0.0);
+	}
+	CUSTOM = vec4(CUSTOM.r + DELTA, CUSTOM.g, 0.0,0.0);
+	
+	
+	COLOR = vec4(1.0,1.0 - sin(CUSTOM.r),0.0,1.0 - sin(CUSTOM.r));
+	VELOCITY = vec3(speed,CUSTOM.g * spread,0.0);
+}"
+
+[sub_resource type="ShaderMaterial" id=3]
 
 render_priority = 0
-trail_divisor = 1
-emission_shape = 0
-flag_align_y = false
-flag_rotate_y = false
-flag_disable_z = true
-spread = 45.0
-flatness = 0.0
-gravity = Vector3( 0, 0, 0 )
-initial_velocity = 50.0
-initial_velocity_random = 0.0
-angular_velocity = 0.0
-angular_velocity_random = 0.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-linear_accel = 0.0
-linear_accel_random = 0.0
-radial_accel = 0.0
-radial_accel_random = 0.0
-tangential_accel = 0.0
-tangential_accel_random = 0.0
-damping = 0.0
-damping_random = 0.0
-angle = 0.0
-angle_random = 0.0
-scale = 2.0
-scale_random = 0.0
-color = Color( 0.269531, 0.0989685, 0.0989685, 1 )
-hue_variation = 0.0
-hue_variation_random = 0.0
-anim_speed = 0.0
-anim_speed_random = 0.0
-anim_offset = 0.0
-anim_offset_random = 0.0
-anim_loop = false
-_sections_unfolded = [ "Scale" ]
+shader = SubResource( 2 )
+shader_param/speed = null
+shader_param/spread = null
 
-[node name="Bullet" type="KinematicBody2D"]
+[node name="Bullet" type="KinematicBody2D" index="0"]
 
+position = Vector2( -0.429276, -0.21463 )
 input_pickable = false
 collision_layer = 8
 collision_mask = 6
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Transform" ]
+_sections_unfolded = [ "Collision", "Material", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -64,8 +59,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Particles2D" type="Particles2D" parent="." index="1"]
 
-emitting = true
-amount = 30
+emitting = false
+amount = 5
 lifetime = 1.0
 one_shot = false
 preprocess = 0.0
@@ -77,12 +72,12 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 2 )
+process_material = SubResource( 3 )
 texture = null
 normal_map = null
 h_frames = 1
 v_frames = 1
-_sections_unfolded = [ "Drawing", "Process Material", "Time" ]
+_sections_unfolded = [ "Drawing", "Process Material" ]
 
 [node name="Sprite" type="Sprite" parent="." index="2"]
 
@@ -90,7 +85,7 @@ position = Vector2( -2.48874, -1.51887 )
 texture = ExtResource( 2 )
 centered = false
 flip_h = true
-_sections_unfolded = [ "Offset", "Transform" ]
+_sections_unfolded = [ "Material", "Offset", "Transform" ]
 
 [node name="Lifetime" type="Timer" parent="." index="3"]
 

@@ -508,7 +508,7 @@ _sections_unfolded = [ "Fill", "Material" ]
 
 [node name="Shield" parent="." index="9" instance=ExtResource( 92 )]
 
-position = Vector2( 0.761967, 0.4207 )
+position = Vector2( 0.007267, -0.711349 )
 scale = Vector2( 0.216907, 0.225791 )
 z_index = 1
 _sections_unfolded = [ "Material", "Transform", "Z Index" ]

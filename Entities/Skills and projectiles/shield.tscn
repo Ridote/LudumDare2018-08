@@ -13,7 +13,7 @@ shader_param/shield_radius = 0.35
 shader_param/shield_vibrating = 60.0
 _sections_unfolded = [ "shader_param" ]
 
-[node name="Sprite" type="Sprite"]
+[node name="Sprite" type="Sprite" index="0"]
 
 material = SubResource( 2 )
 position = Vector2( -9.42222, -18.7614 )
