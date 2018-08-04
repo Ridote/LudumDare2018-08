@@ -1,0 +1,128 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/Enemies/Turret.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Turret/Turret1.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "Slept"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "WakeUp"
+length = 1.9
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.163975, 15.3644 ), Vector2( 0.096241, 13.0954 ), Vector2( 0.0285072, 10.7248 ), Vector2( 0.181648, 7.76412 ), Vector2( 0.028511, 5.7733 ), Vector2( 0.0285072, 3.01678 ), Vector2( -0.0225372, 0.56654 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../CollisionShape2D:shape:extents")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 11.6097, 0.381931 ), Vector2( 11.6097, 2.8541 ), Vector2( 11.6097, 5.22468 ), Vector2( 11.6097, 8.05634 ), Vector2( 11.6097, 10.2513 ), Vector2( 11.6097, 12.8547 ), Vector2( 11.6097, 15.356 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.6097, 1.68351 )
+
+[node name="Turret" type="StaticBody2D"]
+
+position = Vector2( 135.148, 122.279 )
+scale = Vector2( 3.30504, 3.42762 )
+input_pickable = false
+collision_layer = 2
+collision_mask = 13
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+vframes = 5
+hframes = 4
+frame = 18
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite" index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 0.7
+anims/Slept = SubResource( 1 )
+anims/WakeUp = SubResource( 2 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.0859299, 14.4766 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Material", "Transform", "Z Index" ]
+
+

@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var velocity = Vector2(-500,0)
+var velocity = Vector2(-900,0)
 
 func fire_right():
 	$Fire.process_material.set_shader_param("right", true);
@@ -14,6 +14,8 @@ func fire_left():
 
 func _physics_process(delta):
 	move_and_slide(velocity, Vector2(0, -1))
+	if(get_slide_collision(0)):
+		queue_free()
 
 func _on_Lifetime_timeout():
 	queue_free()
