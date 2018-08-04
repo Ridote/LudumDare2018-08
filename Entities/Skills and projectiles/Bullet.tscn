@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Entities/Skills and projectiles/Bullet.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Skills and projectiles/bullet.png" type="Texture" id=2]
@@ -9,12 +9,23 @@
 custom_solver_bias = 0.0
 extents = Vector2( 2.52541, 1.52911 )
 
+[sub_resource type="Shader" id=6]
+
+code = "shader_type canvas_item;
+render_mode unshaded;"
+
+[sub_resource type="ShaderMaterial" id=7]
+
+render_priority = 0
+shader = SubResource( 6 )
+
 [sub_resource type="Shader" id=2]
 
 code = "shader_type particles;
 
 uniform float speed = 50.0;
 uniform float spread = 50.0;
+uniform bool right = true;
 
 void vertex(){
 	COLOR = vec4(1.0);
@@ -27,21 +38,36 @@ void vertex(){
 	}
 	CUSTOM = vec4(CUSTOM.r + DELTA, CUSTOM.g, 0.0,0.0);
 	
-	
-	COLOR = vec4(1.0,1.0 - sin(CUSTOM.r),0.0,1.0 - sin(CUSTOM.r));
-	VELOCITY = vec3(speed,CUSTOM.g * spread,0.0);
+	COLOR = vec4(1.0,1.0 - sin(CUSTOM.r),0.0,1.0);
+	if(right){
+		VELOCITY = vec3(speed,CUSTOM.g * spread,0.0);
+	} else{
+		VELOCITY = vec3(speed * -1.0,CUSTOM.g * spread,0.0);
+	}
 }"
 
 [sub_resource type="ShaderMaterial" id=3]
 
 render_priority = 0
 shader = SubResource( 2 )
-shader_param/speed = null
-shader_param/spread = null
+shader_param/speed = 100.0
+shader_param/spread = 30.0
+shader_param/right = true
+_sections_unfolded = [ "shader_param" ]
+
+[sub_resource type="Shader" id=4]
+
+code = "shader_type canvas_item;
+render_mode unshaded;"
+
+[sub_resource type="ShaderMaterial" id=5]
+
+render_priority = 0
+shader = SubResource( 4 )
 
 [node name="Bullet" type="KinematicBody2D" index="0"]
 
-position = Vector2( -0.429276, -0.21463 )
+position = Vector2( 572.161, 353.079 )
 input_pickable = false
 collision_layer = 8
 collision_mask = 6
@@ -59,9 +85,11 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Fire" type="Particles2D" parent="." index="1"]
 
+show_behind_parent = true
+material = SubResource( 7 )
 emitting = true
-amount = 5
-lifetime = 1.0
+amount = 10
+lifetime = 2.0
 one_shot = false
 preprocess = 0.0
 speed_scale = 1.0
@@ -70,17 +98,18 @@ randomness = 0.0
 fixed_fps = 0
 fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = false
+local_coords = true
 draw_order = 0
 process_material = SubResource( 3 )
 texture = null
 normal_map = null
 h_frames = 1
 v_frames = 1
-_sections_unfolded = [ "Process Material" ]
+_sections_unfolded = [ "Drawing", "Process Material" ]
 
 [node name="Sprite" type="Sprite" parent="." index="2"]
 
+material = SubResource( 5 )
 position = Vector2( -2.48874, -1.51887 )
 texture = ExtResource( 2 )
 centered = false
@@ -96,6 +125,7 @@ autostart = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="4"]
 
+position = Vector2( -0.387421, -0.387421 )
 stream = ExtResource( 3 )
 volume_db = 0.0
 pitch_scale = 1.0
