@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://Sprites/Player/Idle/frame_00_delay-0.04s.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Player/Idle/frame_01_delay-0.04s.png" type="Texture" id=2]
@@ -38,33 +38,33 @@
 [ext_resource path="res://Sprites/Player/Running/frame_14_delay-0.04s.png" type="Texture" id=36]
 [ext_resource path="res://Sprites/Player/Running/frame_15_delay-0.04s.png" type="Texture" id=37]
 [ext_resource path="res://Sprites/Player/Running/frame_16_delay-0.04s.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/Player/Fall/frame_00_delay-0.04s.png" type="Texture" id=39]
-[ext_resource path="res://Sprites/Player/Fall/frame_01_delay-0.04s.png" type="Texture" id=40]
-[ext_resource path="res://Sprites/Player/Fall/frame_02_delay-0.04s.png" type="Texture" id=41]
-[ext_resource path="res://Sprites/Player/Fall/frame_03_delay-0.04s.png" type="Texture" id=42]
-[ext_resource path="res://Sprites/Player/Fall/frame_04_delay-0.04s.png" type="Texture" id=43]
-[ext_resource path="res://Sprites/Player/Fall/frame_05_delay-0.04s.png" type="Texture" id=44]
-[ext_resource path="res://Sprites/Player/Fall/frame_06_delay-0.04s.png" type="Texture" id=45]
-[ext_resource path="res://Sprites/Player/Fall/frame_07_delay-0.04s.png" type="Texture" id=46]
-[ext_resource path="res://Sprites/Player/Fall/frame_08_delay-0.04s.png" type="Texture" id=47]
-[ext_resource path="res://Sprites/Player/Fall/frame_09_delay-0.04s.png" type="Texture" id=48]
-[ext_resource path="res://Sprites/Player/Fall/frame_10_delay-0.04s.png" type="Texture" id=49]
-[ext_resource path="res://Sprites/Player/Fall/frame_11_delay-2s.png" type="Texture" id=50]
-[ext_resource path="res://Sprites/Player/Jump/frame_00_delay-0.04s.png" type="Texture" id=51]
-[ext_resource path="res://Sprites/Player/Jump/frame_01_delay-0.04s.png" type="Texture" id=52]
-[ext_resource path="res://Sprites/Player/Jump/frame_02_delay-0.04s.png" type="Texture" id=53]
-[ext_resource path="res://Sprites/Player/Jump/frame_03_delay-0.04s.png" type="Texture" id=54]
-[ext_resource path="res://Sprites/Player/Jump/frame_04_delay-0.04s.png" type="Texture" id=55]
-[ext_resource path="res://Sprites/Player/Jump/frame_05_delay-0.04s.png" type="Texture" id=56]
-[ext_resource path="res://Sprites/Player/Jump/frame_06_delay-0.04s.png" type="Texture" id=57]
-[ext_resource path="res://Sprites/Player/Jump/frame_07_delay-0.04s.png" type="Texture" id=58]
-[ext_resource path="res://Sprites/Player/Jump/frame_08_delay-0.04s.png" type="Texture" id=59]
-[ext_resource path="res://Sprites/Player/Jump/frame_09_delay-0.04s.png" type="Texture" id=60]
-[ext_resource path="res://Sprites/Player/Jump/frame_10_delay-0.04s.png" type="Texture" id=61]
-[ext_resource path="res://Sprites/Player/Jump/frame_11_delay-0.04s.png" type="Texture" id=62]
-[ext_resource path="res://Sprites/Player/Jump/frame_12_delay-0.04s.png" type="Texture" id=63]
-[ext_resource path="res://Sprites/Player/Jump/frame_13_delay-0.04s.png" type="Texture" id=64]
-[ext_resource path="res://Sprites/Player/Jump/frame_14_delay-2s.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/Player/Jump/frame_00_delay-0.04s.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Player/Jump/frame_01_delay-0.04s.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Player/Jump/frame_02_delay-0.04s.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Player/Jump/frame_03_delay-0.04s.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Player/Jump/frame_04_delay-0.04s.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Player/Jump/frame_05_delay-0.04s.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Player/Jump/frame_06_delay-0.04s.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Player/Jump/frame_07_delay-0.04s.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Player/Jump/frame_08_delay-0.04s.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Player/Jump/frame_09_delay-0.04s.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Player/Jump/frame_10_delay-0.04s.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Player/Jump/frame_11_delay-0.04s.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Player/Jump/frame_12_delay-0.04s.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Player/Jump/frame_13_delay-0.04s.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Player/Jump/frame_14_delay-2s.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Player/Fall/frame_00_delay-0.04s.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Player/Fall/frame_01_delay-0.04s.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Player/Fall/frame_02_delay-0.04s.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Player/Fall/frame_03_delay-0.04s.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Player/Fall/frame_04_delay-0.04s.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Player/Fall/frame_05_delay-0.04s.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/Player/Fall/frame_06_delay-0.04s.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/Player/Fall/frame_07_delay-0.04s.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/Player/Fall/frame_08_delay-0.04s.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/Player/Fall/frame_09_delay-0.04s.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/Player/Fall/frame_10_delay-0.04s.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/Player/Fall/frame_11_delay-2s.png" type="Texture" id=65]
 [ext_resource path="res://Sprites/Player/Hurt/frame_00_delay-0.04s.png" type="Texture" id=66]
 [ext_resource path="res://Sprites/Player/Hurt/frame_01_delay-0.04s.png" type="Texture" id=67]
 [ext_resource path="res://Sprites/Player/Hurt/frame_02_delay-0.04s.png" type="Texture" id=68]
@@ -92,6 +92,18 @@
 [ext_resource path="res://Sounds/Effects/reload.wav" type="AudioStream" id=90]
 [ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=91]
 [ext_resource path="res://Entities/Skills and projectiles/shield.tscn" type="PackedScene" id=92]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_body.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_head.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_arm_right.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_fore_arm_right.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_hand_right.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_hips.png" type="Texture" id=98]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_leg_right.png" type="Texture" id=99]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_leg_right_b.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_foot_right.png" type="Texture" id=101]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_leg_left.png" type="Texture" id=102]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_leg_left_b.png" type="Texture" id=103]
+[ext_resource path="res://Sprites/Cutouts/test1/Pirate_foot_left.png" type="Texture" id=104]
 
 [sub_resource type="GDScript" id=1]
 
@@ -136,6 +148,7 @@ var oldScopeSize = 0
 func _ready():
 	$Camera2D.make_current()
 	oldScopeSize = $laser_scope.points[1].x
+	$Shield.material.set_shader_param(\"shield_vibrating\", 10.0);
 ##############################################################################################
 func _physics_process(delta):
 	var shoot = Input.is_action_pressed(\"shoot\")
@@ -170,7 +183,6 @@ func player_move(delta):
 	# Create forces
 	var force = Vector2(0, GRAVITY)
 	if walk_left:
-		$Shield.material.set_shader_param(\"shield_vibrating\", 30.0);
 		if run:
 			if velocity.x <= RUN_MIN_SPEED and velocity.x > -RUN_MAX_SPEED:
 				force.x -= WALK_FORCE
@@ -179,7 +191,6 @@ func player_move(delta):
 			force.x -= WALK_FORCE
 			stop = false
 	elif walk_right:
-		$Shield.material.set_shader_param(\"shield_vibrating\", 30.0);
 		if run:
 			if velocity.x >= -RUN_MIN_SPEED and velocity.x < RUN_MAX_SPEED:
 				force.x += WALK_FORCE
@@ -191,7 +202,6 @@ func player_move(delta):
 	if stop:
 		var vsign = sign(velocity.x)
 		var vlen = abs(velocity.x)
-		$Shield.material.set_shader_param(\"shield_vibrating\", 10.0);
 		
 		vlen -= STOP_FORCE * delta
 		if vlen < 0:
@@ -285,14 +295,14 @@ animations = [ {
 "name": "Running",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ) ],
-"loop": true,
-"name": "Fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ],
 "loop": true,
 "name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "Fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
@@ -342,33 +352,6 @@ render_mode unshaded;"
 
 render_priority = 0
 shader = SubResource( 5 )
-
-[sub_resource type="Shader" id=7]
-
-code = "shader_type canvas_item;
-
-uniform float width = 0.01;
-uniform float radio = 0.3;
-uniform vec4 color : hint_color;
-
-void fragment(){
-	vec4 t = texture(TEXTURE, UV);
-	vec2 uv = UV - 0.5;
-	float d = length(uv);
-	vec3 c = t.rgb;
-	if(d > radio && d < (radio+width)) c=color.rgb;
-
-	COLOR = vec4(c,t.a);
-}"
-
-[sub_resource type="ShaderMaterial" id=8]
-
-render_priority = 0
-shader = SubResource( 7 )
-shader_param/width = 0.01
-shader_param/radio = 0.3
-shader_param/color = Color( 0.964844, 0.0565338, 0.0565338, 1 )
-_sections_unfolded = [ "shader_param" ]
 
 [node name="Player" type="KinematicBody2D" index="0"]
 
@@ -476,6 +459,7 @@ area_mask = 1
 
 [node name="GunShootFlash" type="Light2D" parent="." index="7"]
 
+editor/display_folded = true
 position = Vector2( 20.6477, 1.17591 )
 scale = Vector2( 0.2, 0.2 )
 enabled = false
@@ -522,18 +506,211 @@ sharp_limit = 2.0
 round_precision = 8
 _sections_unfolded = [ "Fill", "Material" ]
 
-[node name="Node2D" type="Node2D" parent="." index="9"]
-
-material = SubResource( 8 )
-position = Vector2( -0.40583, -1.08221 )
-_sections_unfolded = [ "Material" ]
-
-[node name="Shield" parent="." index="10" instance=ExtResource( 92 )]
+[node name="Shield" parent="." index="9" instance=ExtResource( 92 )]
 
 position = Vector2( 0.761967, 0.4207 )
 scale = Vector2( 0.216907, 0.225791 )
 z_index = 1
 _sections_unfolded = [ "Material", "Transform", "Z Index" ]
+
+[node name="Pirate" type="Sprite" parent="." index="10"]
+
+position = Vector2( 448.728, 388.526 )
+rotation = 0.0812165
+texture = ExtResource( 93 )
+offset = Vector2( -0.322449, -37.1529 )
+
+[node name="Head" type="Sprite" parent="Pirate" index="0"]
+
+position = Vector2( -5.26157, -71.7155 )
+rotation = -0.0812165
+scale = Vector2( 1, 1 )
+z_index = 1
+texture = ExtResource( 94 )
+offset = Vector2( -1.31924, -11.8271 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Pirate/Head" index="0"]
+
+position = Vector2( 8.46765, -24.8191 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RightArmRig" type="Sprite" parent="Pirate" index="1"]
+
+position = Vector2( -21.6767, -60.1772 )
+z_index = 1
+texture = ExtResource( 95 )
+offset = Vector2( 3.55887, 18.1179 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="RightForeArm" type="Sprite" parent="Pirate/RightArmRig" index="0"]
+
+position = Vector2( 0.970612, 38.5005 )
+z_index = 1
+texture = ExtResource( 96 )
+offset = Vector2( 1.93876, 8.98899 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RightHand" type="Sprite" parent="Pirate/RightArmRig/RightForeArm" index="0"]
+
+position = Vector2( 4.72089, 18.4057 )
+z_index = 1
+texture = ExtResource( 97 )
+offset = Vector2( 4.67191, 10.7702 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Pirate/RightArmRig/RightForeArm/RightHand" index="0"]
+
+position = Vector2( 6.46851, 18.0069 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="LeftArmRig" type="Sprite" parent="Pirate" index="2"]
+
+position = Vector2( -1.00775, -64.6483 )
+rotation = -2.30343
+z_index = -1
+texture = ExtResource( 95 )
+offset = Vector2( 2.42871, 18.5847 )
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="LeftForeArm" type="Sprite" parent="Pirate/LeftArmRig" index="0"]
+
+position = Vector2( -2.71175, 40.8733 )
+rotation = -0.382329
+z_index = -1
+texture = ExtResource( 96 )
+offset = Vector2( 2.04126, 7.54312 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="LeftHand" type="Sprite" parent="Pirate/LeftArmRig/LeftForeArm" index="0"]
+
+position = Vector2( 4.84265, 16.4654 )
+rotation = -0.242515
+z_index = -1
+texture = ExtResource( 97 )
+offset = Vector2( 5.14066, 12.1922 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Pirate/LeftArmRig/LeftForeArm/LeftHand" index="0"]
+
+position = Vector2( 4.02094, 20.4545 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Hips" type="Sprite" parent="Pirate" index="3"]
+
+position = Vector2( 0.565826, 13.6928 )
+texture = ExtResource( 98 )
+offset = Vector2( -0.565826, -0.326721 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RightUpperLeg" type="Sprite" parent="Pirate/Hips" index="0"]
+
+position = Vector2( -7.82999, -4.28207 )
+rotation = -0.0197239
+texture = ExtResource( 99 )
+offset = Vector2( 1.21988, 20.6658 )
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="RightLowerLeg" type="Sprite" parent="Pirate/Hips/RightUpperLeg" index="0"]
+
+position = Vector2( -0.968567, 44.7473 )
+rotation = 0.110075
+texture = ExtResource( 100 )
+offset = Vector2( 0.0576172, 12.1425 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RightFoot" type="Sprite" parent="Pirate/Hips/RightUpperLeg/RightLowerLeg" index="0"]
+
+position = Vector2( -0.298492, 24.8132 )
+texture = ExtResource( 101 )
+offset = Vector2( 9.09109, 5.12357 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Pirate/Hips/RightUpperLeg/RightLowerLeg/RightFoot" index="0"]
+
+position = Vector2( 17.5193, 8.75964 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="LeftUpperLeg" type="Sprite" parent="Pirate/Hips" index="1"]
+
+position = Vector2( 9.50232, -6.28326 )
+rotation = -0.498435
+z_index = -1
+texture = ExtResource( 102 )
+offset = Vector2( 3.45673, 20.1418 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="LeftLowerLeg" type="Sprite" parent="Pirate/Hips/LeftUpperLeg" index="0"]
+
+position = Vector2( 2.57605, 43.3574 )
+rotation = 0.483133
+scale = Vector2( 1, 1 )
+z_index = -1
+texture = ExtResource( 103 )
+offset = Vector2( 0.237152, 9.83914 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="LeftFoot" type="Sprite" parent="Pirate/Hips/LeftUpperLeg/LeftLowerLeg" index="0"]
+
+position = Vector2( -0.42926, 21.4638 )
+rotation = 0.369425
+z_index = -1
+texture = ExtResource( 104 )
+offset = Vector2( 8.3934, 4.04395 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Pirate/Hips/LeftUpperLeg/LeftLowerLeg/LeftFoot" index="0"]
+
+position = Vector2( 14.8914, 6.71576 )
+rotation = -0.800322
+__meta__ = {
+"_edit_bone_": true
+}
 
 [connection signal="timeout" from="Timers/ReloadMagazine" to="." method="_on_ReloadMagazine_timeout"]
 
