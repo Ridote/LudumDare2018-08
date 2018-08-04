@@ -9,19 +9,20 @@
 custom_solver_bias = 0.0
 extents = Vector2( 2.52541, 1.52911 )
 
-[sub_resource type="Shader" id=6]
+[sub_resource type="Shader" id=2]
 
 code = "shader_type canvas_item;
 render_mode unshaded;"
 
-[sub_resource type="ShaderMaterial" id=7]
+[sub_resource type="ShaderMaterial" id=3]
 
 render_priority = 0
-shader = SubResource( 6 )
+shader = SubResource( 2 )
 
-[sub_resource type="Shader" id=2]
+[sub_resource type="Shader" id=4]
 
 code = "shader_type particles;
+render_mode keep_data;
 
 uniform float speed = 50.0;
 uniform float spread = 50.0;
@@ -36,7 +37,8 @@ void vertex(){
 	if(CUSTOM.g == 0.0){
 		CUSTOM = vec4(CUSTOM.r + DELTA, rand, 0.0,0.0);
 	}
-	CUSTOM = vec4(CUSTOM.r + DELTA, CUSTOM.g, 0.0,0.0);
+	CUSTOM = vec4(CUSTOM.r + DELTA, CUSTOM.g, CUSTOM.b,0.0);
+	
 	
 	COLOR = vec4(1.0,1.0 - sin(CUSTOM.r),0.0,1.0);
 	if(right){
@@ -45,25 +47,26 @@ void vertex(){
 		VELOCITY = vec3(speed * -1.0,CUSTOM.g * spread,0.0);
 	}
 }"
-
-[sub_resource type="ShaderMaterial" id=3]
-
-render_priority = 0
-shader = SubResource( 2 )
-shader_param/speed = 100.0
-shader_param/spread = 30.0
-shader_param/right = true
-_sections_unfolded = [ "shader_param" ]
-
-[sub_resource type="Shader" id=4]
-
-code = "shader_type canvas_item;
-render_mode unshaded;"
+_sections_unfolded = [ "Resource" ]
 
 [sub_resource type="ShaderMaterial" id=5]
 
 render_priority = 0
 shader = SubResource( 4 )
+shader_param/speed = 250.0
+shader_param/spread = 60.0
+shader_param/right = true
+_sections_unfolded = [ "Resource", "shader_param" ]
+
+[sub_resource type="Shader" id=6]
+
+code = "shader_type canvas_item;
+render_mode unshaded;"
+
+[sub_resource type="ShaderMaterial" id=7]
+
+render_priority = 0
+shader = SubResource( 6 )
 
 [node name="Bullet" type="KinematicBody2D" index="0"]
 
@@ -86,10 +89,10 @@ _sections_unfolded = [ "Transform" ]
 [node name="Fire" type="Particles2D" parent="." index="1"]
 
 show_behind_parent = true
-material = SubResource( 7 )
+material = SubResource( 3 )
 emitting = true
-amount = 10
-lifetime = 2.0
+amount = 40
+lifetime = 0.5
 one_shot = false
 preprocess = 0.0
 speed_scale = 1.0
@@ -100,16 +103,16 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = true
 draw_order = 0
-process_material = SubResource( 3 )
+process_material = SubResource( 5 )
 texture = null
 normal_map = null
 h_frames = 1
 v_frames = 1
-_sections_unfolded = [ "Drawing", "Process Material" ]
+_sections_unfolded = [ "Process Material", "Time" ]
 
 [node name="Sprite" type="Sprite" parent="." index="2"]
 
-material = SubResource( 5 )
+material = SubResource( 7 )
 position = Vector2( -2.48874, -1.51887 )
 texture = ExtResource( 2 )
 centered = false
