@@ -1,7 +1,23 @@
 extends StaticBody2D
+var awakeningDistance = 400
+var sleepingDistance = 600
+
+var player = null
+var awaken = false
 
 func _ready():
-	wakeUp()
-
+	player = get_node("/root/Main/Player")
+	sleep()
 func wakeUp():
 	$Sprite/AnimationPlayer.play("WakeUp")
+func sleep():
+	$Sprite/AnimationPlayer.play("Slept")
+	
+func _process(delta):
+	var distance2Hero = global_position.distance_to(player.global_position);
+	if(distance2Hero < awakeningDistance && ! awaken):
+		wakeUp()
+		awaken = true
+	elif(distance2Hero > sleepingDistance):
+		sleep()
+		awaken = false

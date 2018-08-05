@@ -21,6 +21,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
 
 [sub_resource type="Animation" id=2]
 
@@ -82,7 +94,7 @@ tracks/3/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 11.6097, 1.68351 )
 
-[node name="Turret" type="StaticBody2D"]
+[node name="Turret" type="StaticBody2D" index="0"]
 
 position = Vector2( 135.148, 122.279 )
 scale = Vector2( 3.30504, 3.42762 )
@@ -104,7 +116,6 @@ __meta__ = {
 texture = ExtResource( 2 )
 vframes = 5
 hframes = 4
-frame = 18
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite" index="0"]
@@ -123,6 +134,7 @@ _sections_unfolded = [ "Playback Options" ]
 
 position = Vector2( 0.0859299, 14.4766 )
 shape = SubResource( 3 )
+disabled = true
 _sections_unfolded = [ "Material", "Transform", "Z Index" ]
 
 
