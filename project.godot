@@ -47,7 +47,8 @@ shoot=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"",
 2d_render/layer_3="Floors"
 2d_physics/layer_3="Floors"
 2d_render/layer_4="SkillsProjectiles"
-2d_physics/layer_4="SkillsProjectiles"
+2d_physics/layer_4="PlayerSkillsProjectiles"
+2d_physics/layer_5="EnemySkillsProjectiles"
 2d_render/layer_19="Foreground"
 2d_render/layer_20="Background"
 
