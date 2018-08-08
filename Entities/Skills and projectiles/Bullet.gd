@@ -2,16 +2,8 @@ extends KinematicBody2D
 
 var velocity = Vector2(-900,0)
 
-func fire_right():
+func fire():
 	material = $Fire.process_material.duplicate();
-	material.set_shader_param("right", true);
-	material.set_shader_param("speed", abs(velocity.x));
-	$Fire.process_material = material;
-	$Fire.emitting = true;
-
-func fire_left():
-	material = $Fire.process_material.duplicate();
-	material.set_shader_param("right", false);
 	material.set_shader_param("speed", abs(velocity.x));
 	$Fire.process_material = material;
 	$Fire.emitting = true;
