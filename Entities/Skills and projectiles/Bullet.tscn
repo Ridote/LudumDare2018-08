@@ -12,7 +12,15 @@ extents = Vector2( 2.52541, 1.52911 )
 [sub_resource type="Shader" id=2]
 
 code = "shader_type canvas_item;
-render_mode unshaded;"
+render_mode unshaded;
+
+void fragment(){
+	vec2 uv = UV - 0.5;
+	
+	if(length(uv) > 0.5) {
+		COLOR = vec4(COLOR.r, COLOR.g, COLOR.b, 0.0);
+	}
+}"
 
 [sub_resource type="ShaderMaterial" id=3]
 
@@ -108,7 +116,7 @@ texture = null
 normal_map = null
 h_frames = 1
 v_frames = 1
-_sections_unfolded = [ "Process Material", "Time" ]
+_sections_unfolded = [ "Material" ]
 
 [node name="Sprite" type="Sprite" parent="." index="2"]
 

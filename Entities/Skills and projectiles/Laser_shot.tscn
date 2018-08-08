@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="Shader" id=3]
+
+code = "shader_type canvas_item;
+
+uniform float width = 0.3;
+uniform float spread = 0.1;
+
+void fragment(){
+	vec2 uv = UV - 0.5;
+	if(uv.y > width){
+		float st = smoothstep(width, width + spread, uv.y);
+		COLOR = vec4(COLOR.r, COLOR.g, COLOR.b, 1.0-st);
+	}
+	if(uv.y < -width){
+		float st = smoothstep(width, width + spread, uv.y * -1.0);
+		COLOR = vec4(COLOR.r, COLOR.g, COLOR.b, 1.0-st);
+	}
+	if(uv.x < 0.0){
+		COLOR = vec4(0.0);
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=4]
+
+render_priority = 0
+shader = SubResource( 3 )
+shader_param/width = 0.2
+shader_param/spread = 0.3
+_sections_unfolded = [ "shader_param" ]
+
+[sub_resource type="Shader" id=1]
+
+code = "shader_type particles;
+
+uniform float len = 1000.0;
+
+void vertex(){
+	VELOCITY = vec3(0.0,0.0,0.0);
+	COLOR = vec4(1.0,0.0,0.0,1.0);
+	TRANSFORM = mat4(vec4(len,0.0,0.0,0.0), TRANSFORM[1], TRANSFORM[2], TRANSFORM[3]);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = SubResource( 1 )
+shader_param/len = 400.0
+_sections_unfolded = [ "shader_param" ]
+
+[node name="laser" type="Particles2D" index="0"]
+
+material = SubResource( 4 )
+position = Vector2( -18.2715, 118.376 )
+scale = Vector2( 2.12706, 2.01374 )
+emitting = true
+amount = 1
+lifetime = 2.0
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 2 )
+texture = null
+normal_map = null
+h_frames = 1
+v_frames = 1
+_sections_unfolded = [ "Material", "Process Material" ]
+
+
