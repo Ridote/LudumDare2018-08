@@ -10,8 +10,10 @@ func _ready():
 	sleep()
 func wakeUp():
 	$Sprite/AnimationPlayer.play("WakeUp")
+	yield( get_node("AnimationPlayer"), "finished" )
 func sleep():
 	$Sprite/AnimationPlayer.play("Slept")
+	yield( get_node("AnimationPlayer"), "finished" )
 	
 func _process(delta):
 	var distance2Hero = global_position.distance_to(player.global_position);
