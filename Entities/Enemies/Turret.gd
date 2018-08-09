@@ -52,7 +52,7 @@ func shoot():
 		#Character and floors (1+4)
 		bullet.set_collision_mask(5)
 		bullet.position = global_position
-		bullet.fire_right()
+		bullet.fire()
 		bullet.velocity.x = -150
 		bullet.velocity.y = 50
 		

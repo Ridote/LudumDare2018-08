@@ -70,7 +70,7 @@ render_mode unshaded;"
 render_priority = 0
 shader = SubResource( 6 )
 
-[node name="Bullet" type="KinematicBody2D" index="0"]
+[node name="Bullet" type="KinematicBody2D"]
 
 position = Vector2( 572.161, 353.079 )
 input_pickable = false
