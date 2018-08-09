@@ -359,7 +359,7 @@ render_mode unshaded;"
 render_priority = 0
 shader = SubResource( 5 )
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 position = Vector2( 0.21463, -0.37735 )
 input_pickable = false
