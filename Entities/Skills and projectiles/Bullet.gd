@@ -9,10 +9,15 @@ func fire():
 	$Fire.emitting = true;
 	
 func _physics_process(delta):
-	move_and_slide(velocity, Vector2(0, -1))
+	var kinemObject = move_and_collide(velocity*delta)
 	#We need to check whether there are collisions or not and then if there are take the first one cause we don't care about the rest, we will just be destroyed for now
-	if(get_slide_count() > 0 && get_slide_collision(0)):
+	
+	if(kinemObject != null):
+		if kinemObject.get_collider().has_method("getDamage"):
+			kinemObject.get_collider().getDamage(getAtackDamage())
 		queue_free()
 
 func _on_Lifetime_timeout():
 	queue_free()
+func getAtackDamage():
+	return 25
